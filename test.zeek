@@ -23,7 +23,7 @@ event zeek_done()
     {
         if (|agts[i]| >= 3) 
         {
-            print(i+" is a proxy");
+            print(addr_to_uri(i) +" is a proxy");
         }
     }
 }
